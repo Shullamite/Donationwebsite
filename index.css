@@ -184,6 +184,7 @@ header nav ul li a:hover{
 	padding: 30px;
 	box-shadow: 0 0 8px;
 	box-shadow: rgba(0,0,0,0.5);
+	border-radius: 10px;
 }
 .login-container .login-text{
 	font-size: 35px;
@@ -293,7 +294,7 @@ form .signup-link a:hover{
 	padding-bottom: 25px;
 
 }
-.Abouttitle, .programtitles, .gallerytitle, .cvtitle{
+.Abouttitle, .programtitles, .gallerytitle, .cvtitle, .joinustitle{
 	padding-top: 25px;
 	font-size: 30px;
 	text-transform: uppercase;
@@ -377,7 +378,7 @@ section{
 	grid-gap: 50px;
 }
 
-.box {
+.box{
 	background-color: #0099ff;
 	text-align: center;
 	padding-bottom: 25px;
@@ -496,14 +497,88 @@ section{
 	opacity: 0.3;
 }
 
-@media and (max-width: 1140px){
-	.container, .containers{
-		width: 100%;
-		padding: 0 15px;
-	}
-}
-@media screen and (max-width: 1000px){
-	
-}
-
 /*gallery style end*/
+
+/*footer beginning*/
+footer .containers{
+	width: 1140px;
+	margin: auto;
+	padding-bottom: 25px;
+}
+footer{
+	background-color: #181818;
+	color: #7f7f7f;
+	padding: 50px 0;
+	font-size: 14px;
+}
+footer .subcon{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr ;
+	grid-gap: 50px;
+}
+footer .title{
+	font-size: 15px;
+	font-weight: 450;
+	text-transform: uppercase;
+	border-bottom: 2px solid;
+	margin-bottom: 30px;
+	padding: 0 0 5px 0;
+	width: 180px;
+	text-align: left;
+}
+footer p{
+	margin-bottom: 10px;
+}
+footer .readcontainer ul{
+	list-style: none;
+}
+footer .linkscontainer ul{
+	list-style: none;
+}
+footer .linkscontainer, .readcontainer ul li a{
+	text-decoration: none;
+	color: #7f7f7f;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.linkscontainer ul li a{
+	text-decoration: none;
+	color: #7f7f7f;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+footer .newslettercontainer p{
+	margin-bottom: 25px;
+}
+footer .newslettercontainer input{
+	background-color: transparent;
+	border: 1px solid #7f7f7f;
+	outline: none;
+	padding: 10px 15px;
+	width: 100%;
+	margin-top: 5px;
+	color: #ccc;
+	border-radius: 30px;
+}
+.linkicons{
+	float: right;
+}
+.class{
+	text-align: center;
+	margin-top: 50px;
+}
+.class p{
+	text-transform: uppercase;
+	font-size: 25px;
+	font-weight: 450%;
+	text-shadow: 0 0 2px #000;
+}
+ .fa-brands, .fa-solid{
+ 	margin-top: 8px;
+	font-size: 30px;
+	margin-right: 10px;
+}
+.link{
+	margin-left: 5px;
+}
+/*footer end*/
