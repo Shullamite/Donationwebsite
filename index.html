@@ -1,403 +1,584 @@
 <!DOCTYPE html>
 <html lang="engUS">
-<head>
-<meta charset="utf-8">
-<title>Donation Website</title>
-<meta name="viewpoint" content="width=device-width, initial-scale=1.0">	
-<link rel="stylesheet" type="text/css" href="index.css">
-<script src="https://kit.fontawesome.com/897818b1e9.js" crossorigin="anonymous"></script>
 
-<style>
-	.join{
-		background-color: rgb(229, 229, 255);
-	}
- 	.joinustitle{
- 		width: 245px;
- 		word-spacing: 5px;
- 		
- 	}
- 	.jointitle{
- 		font-size: 30px;
- 		font-weight: 100;
- 		margin-bottom: 30px;
- 		text-align:center;
- 		font-weight: bold;
- 	}
- 	.joinusbox{
- 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		grid-gap: 50px;
- 	}
- 	.usbox{
- 		text-align: center;
- 		font-size: 20px;
- 		font-style: italic;
- 		background-color: #f5f5f5;
-		text-align: center;
-		padding-bottom: 25px;
-		padding: 25px;
-		box-shadow: 0 0 3px 0 #c5c5c5;
-		border-radius: 10px;
- 	}
- 	.join button{
- 		padding: 10px 15px;
- 		margin-top: 20px;
- 		border: 0;
- 		outline: none;
- 		font-weight: 600;
- 		font-size: 16px;
- 		border-radius: 10px;
- 	}
- 	.joinbtn{
- 		margin-right: 10px;
- 		background-color: #424242;
- 		color: #ffff;
- 		cursor: pointer;
- 	}
- 	.Adoptbtn{
- 		background-color: grey;
- 		cursor: pointer;
- 	}
- 	 .joinbtn:hover{
- 		background-color: #0099ff;
- 		color: black;
- 	}
- 	 .Adoptbtn:hover{
- 		background-color: #0099ff;
- 		color: white;
- 	}
-</style>
+<head>
+    <meta charset="utf-8">
+    <title>Donation Website</title>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <script src="https://kit.fontawesome.com/897818b1e9.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Modernizr -->
+    <script src="assets/js/modernizr-2.6.2.min.js"></script>
+    <style>
+        .join {
+            background-color: rgb(229, 229, 255);
+        }
+        
+        .joinustitle {
+            width: 245px;
+            word-spacing: 5px;
+        }
+        
+        .jointitle {
+            font-size: 30px;
+            font-weight: 100;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .joinusbox {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 50px;
+        }
+        
+        .usbox {
+            text-align: center;
+            font-size: 20px;
+            font-style: italic;
+            background-color: #f5f5f5;
+            text-align: center;
+            padding-bottom: 25px;
+            padding: 25px;
+            box-shadow: 0 0 3px 0 #c5c5c5;
+            border-radius: 10px;
+        }
+        
+        .join button {
+            padding: 10px 15px;
+            margin-top: 20px;
+            border: 0;
+            outline: none;
+            font-weight: 600;
+            font-size: 16px;
+            border-radius: 10px;
+        }
+        
+        .joinbtn {
+            margin-right: 10px;
+            background-color: #424242;
+            color: #ffff;
+            cursor: pointer;
+        }
+        
+        .Adoptbtn {
+            background-color: grey;
+            cursor: pointer;
+        }
+        
+        .joinbtn:hover {
+            background-color: #0099ff;
+            color: black;
+        }
+        
+        .Adoptbtn:hover {
+            background-color: #0099ff;
+            color: white;
+        }
+    </style>
 
 </head>
+
 <body>
-
-<div id="home" class="content-container">
-	<header>
-		<div class="container">
-			
-			<div class="titlediv">
-			<p class="donate"><span style="color:#0099ff">CEROM </span>Donation Website </p>
-		</div>
-			<nav>
-				<ul>
-					<li>
-						<a href="#home">Home</a>
-					</li>
+    <header class="main-header">
+        <nav class="navbar navbar-static-top" id="mynavBar">
+            <div class="navbar-main">
+                <div class="container-fluid">
 
 
+                    <div class="navbar-header titlediv">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" style="margin-top:10px; color: aliceblue;">
+	
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+	
+					  </button>
 
-					<div class="dropdown">
-						<button class="dropbtn">
-							<a href="#aboutpage">About us</a>
-						</button>
-						<div class = "dropdown-content">
-							<li>
-								<a href="#programsid">Programs</a>
-							</li>
-						</div>
-					</div>
-
-
-
-					<li>
-						<a href="#gallerysec">Gallery</a>
-					</li>
-
-					<li>
-						<a href="#cvsection">Cv portfolio</a>
-					</li>
-					<li>
-						<a href="#joinus">Join us</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<!--end of header-->
-
-	<div class="container">
-		<h1>Together we can give <span class="span"> the poor </span>and <span class="span"> less privileged</span> hope.</h1>
-		<p class="p"> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. </p>
-		<div><br>
-		<input type="checkbox" id="show">
-		<label for="show" class="show-btn">Login</label>
-		<div class="login-container">
-			<label for="show" class="close-btn fa-solid fa-xmark"></label>
-			<div class="login-text">Login form</div>
-			<form action="#">
-				<div class="data">
-					<label>Email or Phone</label>
-					<input type="text"required>
-				</div>
-				<div class="data">
-					<label>Password</label>
-					<input type="password" required>
-				</div>
-				<div class="forgot-pass"><a href="#">Forgot password</a></div>
-				<div class="button-type">
-					<div class="inner"></div>
-					<button class="login-button" type="submit">Login</button>
-				</div>
-				<div class="signup-link">Not a member?<a href="#">Signup Now</a></div>
-			</form>
-		</div>
-		</div>
-	</div>
-
-</div>
-<!--home--->
-
-		<section class="containerfull" id="aboutpage">
-			
-			<div class="containers">
-				<h2 class="Abouttitle">About <span style="color: #0099ff;">Cerom</span></h2>
-				<p class="t">ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<h2 class="how">How could you help?</h2>
-				<div class="main">
-
-					<div class="donateboxs">
-						<div class="title">Support by Donations</div>
-						<p class="para">
-							ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor 
-						</p>
-						<button class="button">
-							Donate now
-						</button>
-					</div>
-					<!---Donation box end-->
-
-					<div class="donateboxs">
-						<div class="title">Support by Donations</div>
-						<p class="para">
-							ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor 
-						</p>
-						<button class="button">
-							Donate now
-						</button>
-					</div>
-					<!---Donation box end-->
-
-					<div class="donateboxs">
-						<div class="title">Support by Donations</div>
-						<p class="para">
-							ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor 
-						</p>
-						<button class="button">
-							Donate now
-						</button>
-					</div>
-					<!---Donation box end-->
-				</div>
-
-					
-			</div>
-		</section>
-		<!--Aboutus page end-->
-
-		<section class="programs" id="programsid">
-			<div class="containers">
-				<h2 class="programtitles">Programs</h2>
-
-				<div class="containerbox">
-					<div class="box">
-						<div class="boximage"></div>
-						<div class="programtitle">Education to every child</div>
-						<div class="Donationcount">
-							Donation goal : <span>N 10,000</span>
-						</div>
-						<button class="buttons">Donate now</button>
-					</div>
-					<!--box end-->
-
-					<div class="box">
-						<div class="boximage"></div>
-						<div class="programtitle">Education to every child</div>
-						<div class="Donationcount">
-							Donation goal : <span>N 10,000</span>
-						</div>
-						<button class="buttons">Donate now</button>
-					</div>
-					<!--box end-->
-
-					<div class="box">
-						<div class="boximage"></div>
-						<div class="programtitle">Education to every child</div>
-						<div class="Donationcount">
-							Donation goal : <span>N 10,000</span>
-						</div>
-						<button class="buttons">Donate now</button>
-					</div>
-					<!--box end-->
-				</div>
-				<!--box container end-->
-			</div>
-		</section>
-		<!--programs sectiom-->
-
-
-			<section class="gallery" id="gallerysec">
-				<div class="containers">
-					<div class="gallerytitle" >Gallery</div>
-					<div class="gallerycontainer">
-						<div class="items">
-							<span class="img-title">Images</span>
-							<img src="images/0003.jpg" alt="">
-						</div>
-						<!--items-->
-
-						<div class="items">
-							<span class="img-title">Images</span>
-							<img src="images/0001.jpg" alt="">
-						</div>
-						<!--items-->
-
-						<div class="items">
-							<span class="img-title">Images</span>
-							<img src="images/0003.jpg" alt="">
-						</div>
-						<!--items-->
-
-						<div class="items">
-							<span class="img-title">Images</span>
-							<img src="images/0003.jpg" alt="">
-						</div>
-						<!--items-->
-
-						<div class="items">
-							<span class="img-title">Images</span>
-							<img src="images/0003.jpg" alt="">
-						</div>
-						<!--items-->
-
-						<div class="items">
-							<span class="img-title">Images</span>
-							<img src="images/0003.jpg" alt="">
-						</div>
-						<!--items-->
-						<div class="items">
-							<span class="img-title">Images</span>
-							<img src="images/0003.jpg" alt="">
-						</div>
-						<!--items-->
-					</div>
-				</div>
-			</section>
-
-			<section class="cvsection" id="cvsection">
-				<div containers>
-					<h2 class="cvtitle">CV PORFOLIO</h2>
-					<div class="mainbox">
-						
-					</div>
-				</div>
-			</section>
-			
-			<section class="join" id="joinus">
-				<div containers>
-					<h2 class="joinustitle">Join us</h2>
-					<div class="jointitle">CEROM INVITES YOU TO JOIN & <span style="font-weight: 800; color: #0099ff;">MAKE A DIFFERENCE</span></div>
-					<div class="joinusbox">
-						<div class="usbox">
-							<p>Making a difference is easy particularly with Cerom. The smallest action carried out can help. Join us now to be part of cerom.</p>
-							<button class="joinbtn">Join Now</button>
-						</div>
-
-						<div class="usbox">
-							<p> One way to making a difference is by adopting a child</p>
-							<button class="Adoptbtn">Adopt a child</button>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<footer>
-				<div class="containers">
-					<div class="subcon">
-					<div class="linkscontainer">
-						<div class="title">Useful Links</div>
-						<ul>
-					<li>
-						<a href="#home">Home</a>
-					</li>
-
-					<li>
-						<a href="#aboutpage">About Us</a>
-					</li>
-
-					<li>
-						<a href="#programsid">Programs</a>
-					</li>
-
-					<li>
-						<a href="#gallerysec">Gallery</a>
-					</li>
-
-					<li>
-						<a href="#cvsection">Cv portfolio</a>
-					</li>
-					<li>
-						<a href="#joinus">Join us</a>
-					</li>
-				</ul>
-					</div>
-
-					<div class="readcontainer">
-                        <div class="title">Projects</div>
-                        <ul>
-                            <li><a href="#">Project</a></li>
-                            <li><a href="#">Project</a></li>
-                            <li><a href="#">Project</a></li>
-                            <li><a href="#">Project</a></li>
-                        </ul>
+                        <p class="donate navbar-brand">Donation<span style="color:#0099ff; margin-right: 50px;"> Website</span> </p>
                     </div>
 
+                    <div id="navbar" class="navbar-collapse collapse pull-left" style="margin-top: 15px;">
 
-					<div class="connectcontainer">
-						<div class="title">Connect with us</div>
-						<p>
-							Head Office<br>
-							Cedi Plaza<br>
-							264 Tafawa Balewa Road,Phase 1<br> 901002, Abuja
-						</p>
-						<p>Cerom@donation.com</p>
-						<p>(+234) 8146938887</p>
-					</div>
-
-					
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="space">
+                                <a href="#home" style="text-decoration: none;" class="active">Home</a>
+                            </li>
 
 
-					<div class="newslettercontainer">
-					<p>Subscribe to receive our weekly newsletters</p>
-					<input type="text" placeholder="Enter your email Id">
-					</div>
-					</div>
-					<br>
-					<br>
-					<hr>
-					<br>
-					<div class="linkicons">
-						<h4 class="link">Follow us</h4>
-						<i class="fa-brands fa-facebook-f"></i>
-						<i class="fa-brands fa-twitter"></i>
-						<i class="fa-brands fa-instagram"></i>
-						<a href="claireerhuanga@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-					</div>
 
-					<div class="class">
-						<p>ALL RIGHTS RESERVED @CEROM 2022</p>
-					</div>
-				</div>
-			</footer>
+                            <div class="dropdown space" style="margin-top: 10px;">
+                                <button class="dropbtn">
+											<a href="#aboutpage" style="text-decoration: none; padding-left: 5px; padding-right: 5px;">About us</a>
+										</button>
+                                <div class="dropdown-content">
+                                    <li class="space">
+                                        <a href="#programsid" style="text-decoration: none;">Programs</a>
+                                    </li>
+                                </div>
+                            </div>
+
+
+
+                            <li class="space">
+                                <a href="#gallerysec" style="text-decoration: none;">Gallery</a>
+                            </li>
+
+                            <li class="space">
+                                <a href="#cvsection" style="text-decoration: none;">Cv portfolio</a>
+                            </li>
+                            <li class="space">
+                                <a href="#joinus" style="text-decoration: none;">Join us</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--end of header-->
+    <div id="home" class="content-container" style="background-image: url(assets/images/0001.jpg) !important;
+    background-size: cover;
+    background-attachment: fixed;">
+        <div class="container" id="homeH">
+            <h1 style="margin-top: 180px;">Together we can give <span class="span"> the poor </span>and <span class="span"> less privileged</span> hope.</h1>
+            <p class="p"> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <div><br>
+                <input type="checkbox" id="show">
+                <label for="show" class="show-btn">Login</label>
+                <div class="login-container">
+                    <label for="show" class="close-btn fa-solid fa-xmark"></label>
+                    <div class="login-text">Login form</div>
+                    <form action="#">
+                        <div class="data">
+                            <label>Email or Phone</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="data">
+                            <label>Password</label>
+                            <input type="password" required>
+                        </div>
+                        <div class="forgot-pass"><a href="#">Forgot password</a></div>
+                        <div class="button-type">
+                            <div class="inner"></div>
+                            <button class="login-button" type="submit">Login</button>
+                        </div>
+                        <div class="signup-link">Not a member?<a href="#">Signup Now</a></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--home--->
+
+    <section class="containerfull" id="aboutpage">
+
+        <div class="aboutCon container-fluid">
+            <h2 class="Abouttitle">About <span style="color: #0099ff;">Cerom</span></h2>
+            <p class="t">ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h2 class="how">How could you help?</h2>
+            <div class="main row">
+
+                <div class="donateboxs don1 col-md-4 col-md-12">
+                    <div class="title ">Support by Donations</div>
+                    <p class="para ">
+                        ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    </p>
+                    <button class="button ">
+							Donate now
+						</button>
+                </div>
+                <!---Donation box end-->
+
+                <div class="donateboxs don2 col-md-4 col-sm-12">
+                    <div class="title ">Support by Donations</div>
+                    <p class="para ">
+                        ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    </p>
+                    <button class="button ">
+							Donate now
+						</button>
+                </div>
+                <!---Donation box end-->
+
+                <div class="donateboxs don3 col-md-4 col-sm-12">
+                    <div class="title ">Support by Donations</div>
+                    <p class="para ">
+                        ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    </p>
+                    <button class="button ">
+							Donate now
+						</button>
+                </div>
+                <!---Donation box end-->
+            </div>
+
+
+
+
+        </div>
+    </section>
+    <!--Aboutus page end-->
+
+    <section class="programs" id="programsid">
+        <div class="aboutCon">
+            <h2 class="programtitles">Programs</h2>
+
+            <div class="containerbox">
+                <div class="box">
+                    <div class="boximage"></div>
+                    <div class="programtitle">Education to every child</div>
+                    <div class="Donationcount">
+                        Donation goal : <span>N 10,000</span>
+                    </div>
+                    <button class="buttons">Donate now</button>
+                </div>
+                <!--box end-->
+
+                <div class="box ">
+                    <div class="boximage"></div>
+                    <div class="programtitle">Education to every child</div>
+                    <div class="Donationcount">
+                        Donation goal : <span>N 10,000</span>
+                    </div>
+                    <button class="buttons">Donate now</button>
+                </div>
+                <!--box end-->
+
+                <div class="box">
+                    <div class="boximage"></div>
+                    <div class="programtitle">Education to every child</div>
+                    <div class="Donationcount">
+                        Donation goal : <span>N 10,000</span>
+                    </div>
+                    <button class="buttons">Donate now</button>
+                </div>
+                <!--box end-->
+            </div>
+            <!--box container end-->
+        </div>
+    </section>
+    <!--programs sectiom-->
+
+
+    <section class="gallery" id="gallerysec">
+        <div class="aboutCon">
+            <div class="gallerytitle">Gallery</div>
+            <div class="gallerycontainer container-fluid">
+                <div class="row">
+                    <div class="items col-md-4 col-xsm-12">
+                        <span class="img-title">Images</span>
+                        <img src="assets/images/0003.jpg" alt="">
+                    </div>
+                    <!--items-->
+
+                    <div class="items col-md-4 col-xsm-12">
+                        <span class="img-title">Images</span>
+                        <img src="assets/images/0003.jpg" alt="">
+                    </div>
+                    <!--items-->
+
+                    <div class="items col-md-4 col-xsm-12">
+                        <span class="img-title">Images</span>
+                        <img src="assets/images/0003.jpg" alt="">
+                    </div>
+                    <!--items-->
+
+                    <div class="items col-md-4 col-xsm-12">
+                        <span class="img-title">Images</span>
+                        <img src="assets/images/0003.jpg" alt="">
+                    </div>
+                    <!--items-->
+
+                    <div class="items col-md-4 col-xsm-12">
+                        <span class="img-title">Images</span>
+                        <img src="assets/images/0003.jpg" alt="">
+                    </div>
+                    <!--items-->
+                    <div class="items col-md-4 col-xsm-12">
+                        <span class="img-title">Images</span>
+                        <img src="assets/images/0003.jpg" alt="">
+                    </div>
+                    <!--items-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==================================================================================== -->
+    <!-- ==================================================================================== -->
+    <!-- ==================================================================================== -->
+    <!-- .................................PORTFOLIO...................................... -->
+    <!-- ==================================================================================== -->
+    <!-- ==================================================================================== -->
+    <!-- ==================================================================================== -->
+    <section class="cvsection" id="cvsection" style="height: auto; background-color: rgb(235, 240, 239);">
+        <div class="container-fluid" style="height: fit-content;">
+            <h2 class="cvtitle">CV PORFOLIO</h2>
+            <div class="mainbox">
+                <div class="lmain">
+                    <div class="lrow" style="margin: 0 auto; ">
+                        <div class="lleft">
+                            <br><img src="assets/images/000003.png" id="limg">
+
+
+                            <div class="lbox-1">
+                                <div class="heading">
+                                    <p class="con p">CONTACT</p>
+                                </div>
+                                <div style="font-size: 11px;">
+                                    <p class="text p"><i class="fa-solid fa-location-dot i"></i>Karu-site abuja</p>
+                                    <p class="text p"><i class="fa-solid fa-phone i"></i>+01 123 456 8888</p>
+                                    <p class="text p"><i class="fa-solid fa-envelope i"></i>email@gamil.com</p>
+                                    <p class="text p"><i class="fa-solid fa-globe i"></i>www.yoursite.com</p>
+                                </div>
+                            </div>
+
+
+
+                            <div class="lbox-1">
+                                <div class="heading">
+                                    <p class="con p">LANGUAGES</p>
+                                </div>
+                                <p class="p1 p">ENGLISH
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success " role="progressbar " aria-valuenow="80 " aria-valuemin="0 " aria-valuemax="100 " style="width:80% ">
+                                            80%
+                                        </div>
+                                    </div>
+                                </p>
+
+                                <p class="p1 p ">SPANISH
+                                    <div class="progress ">
+                                        <div class="progress-bar progress-bar-success " role="progressbar " aria-valuenow="93 " aria-valuemin="0 " aria-valuemax="100 " style="width:93% ">
+                                            93%
+                                        </div>
+                                    </div>
+                                </p>
+
+                                <p class="p1 p ">GERMAN <br>
+                                    <div class="progress ">
+                                        <div class="progress-bar progress-bar-success " role="progressbar " aria-valuenow="65 " aria-valuemin="0 " aria-valuemax="100 " style="width:65% ">
+                                            65%
+                                        </div>
+                                    </div>
+                                </p>
+
+                                <p class="p2 p ">FRENCH <br>
+                                    <div class="progress ">
+                                        <div class="progress-bar progress-bar-success " role="progressbar " aria-valuenow="96 " aria-valuemin="0 " aria-valuemax="100 " style="width:96% ">
+                                            96%
+                                        </div>
+                                    </div>
+                                </p>
+                            </div>
+
+                            <div class="lbox-1 ">
+                                <div class="heading ">
+                                    <p class="con p ">HOBBIES</p>
+                                </div>
+                                <div class="others ">
+                                    <p class="p1 p ">Travelling</p>
+                                    <p class="p1 p ">Cooking</p>
+                                    <p class="p1 p ">Reading</p>
+                                    <p class="p1 p ">Dancing</p>
+                                </div>
+
+                                <div class="others ">
+                                    <p class="p1 p ">Music</p>
+                                    <p class="p1 p ">Photography</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="lright ">
+                            <div class="headings ">
+                                <h5 style="font-family: serif; " class="h5 ">PERSONAL PROFILE</h5>
+                            </div>
+                            <div class="para ">
+                                <p class="bl p ">Extremely motivated to constantly develop my skills and grow professionally. I am confident in my ability to come up with interesting ideas for unforgettable marketing campaigns
+                                </p>
+                            </div>
+
+                            <div class="headings ">
+                                <h5 style="font-family: serif; " class="h5 ">EDUCATION</h5>
+                            </div>
+                            <table style="width:90% " class="ltable ">
+                                <tr class="ltr ">
+                                    <th class="lth ">Qualification</th>
+                                    <th class="lth ">Colledge</th>
+                                    <th class="ltd ">Year</th>
+                                </tr>
+                                <tr class="ltr ">
+                                    <td class="ltd ">Bachelor in Marketing</td>
+                                    <td class="ltd ">SAN DIEGO UNIVERSITY</td>
+                                    <td class="ltd ">2012-2017</td>
+                                </tr>
+                                <tr>
+                                    <td class="ltd ">AB Multimedia Arts</td>
+                                    <td class="ltd ">Berkshire University</td>
+                                    <td class="ltd ">2019-2020</td>
+                                </tr>
+                                <tr class="ltr ">
+                                    <td class="ltd ">Certification Course in Digital Marketing</td>
+                                    <td class="ltd ">Berkshire University</td>
+                                    <td class="ltd ">2023-2024</td>
+                                </tr>
+                            </table>
+                            <div class="headings ">
+                                <h5 style="font-family: serif; " class="h5 ">WORK EXPERIENCE</h5>
+                            </div>
+                            <table style="width:90% " class="ltable ">
+                                <tr class="ltr ">
+                                    <th class="lth ">Job</th>
+                                    <th class="lth ">Experience</th>
+                                    <th class="lth ">Date</th>
+                                </tr>
+                                <tr class="ltr ">
+                                    <td class="ltd ">13 Monkeys, Marketing Assistant</td>
+                                    <td class="td ltd ">aintained and organized numerous office files<br> Constantly updated the company's contact and mailing lists<br> Monitoring ongoing marketing campaign<br> Monitoring press coverage</p>
+                                    </td>
+                                    <td class="ltd ">Jun 2019-Jan 2020</td>
+                                </tr>
+                                <tr class="ltr ">
+                                    <td class="ltd ">World Mark, Marketing Assistant</td>
+                                    <td class="ltd ">Handled the company's online presence- regularly<br> updated the company's website and various social media accounts<br> Monitoring ongoing marketing campaign<br> prepared presentations for prospective clients
+                                    </td>
+                                    <td class="ltd "></td>
+                                </tr>
+                            </table>
+
+                            <div class="headings ">
+                                <h5 style="font-family: serif; " class="h5 ">PROFESSIONAL SKILLS</h5>
+                            </div>
+                            <ul class="lastlist ">
+                                <li class="list ">Exceptional communication and networking skills</li>
+                                <li class="list ">Successful working in a team environment, as well as independently</li>
+                                <li class="list ">The ability to work under presure and multi-tasking</li>
+                                <li class="list ">The ability to follow instructions and deliver quality</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="join " id="joinus ">
+        <div class="aboutCon ">
+            <h2 class="joinustitle ">Join us</h2>
+            <div class="jointitle ">CEROM INVITES YOU TO JOIN & <span style="font-weight: 800; color: #0099ff; ">MAKE A DIFFERENCE</span></div>
+            <div class="joinusbox ">
+                <div class="usbox ">
+                    <p>Making a difference is easy particularly with Cerom. The smallest action carried out can help. Join us now to be part of cerom.</p>
+                    <button class="joinbtn ">Join Now</button>
+                </div>
+
+                <div class="usbox ">
+                    <p> One way to making a difference is by adopting a child</p>
+                    <button class="Adoptbtn ">Adopt a child</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="aboutCon container-fluid ">
+            <div class="subcon row ">
+                <div class="linkscontainer container col-g-3 col-md-4 col-sm-4 foot ">
+                    <div class="ftitle ">Useful Links</div>
+                    <ul>
+                        <li>
+                            <a href="#home ">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#aboutpage ">About Us</a>
+                        </li>
+
+                        <li>
+                            <a href="#programsid ">Programs</a>
+                        </li>
+
+                        <li>
+                            <a href="#gallerysec ">Gallery</a>
+                        </li>
+
+                        <li>
+                            <a href="#cvsection ">Cv portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#joinus ">Join us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="readcontainer container col-g-3 col-md-4 col-sm-4 foot ">
+                    <div class="ftitle ">Projects</div>
+                    <ul>
+                        <li><a href="# ">Project</a></li>
+                        <li><a href="# ">Project</a></li>
+                        <li><a href="# ">Project</a></li>
+                        <li><a href="# ">Project</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="connectcontainer container col-g-3 col-md-4 col-sm-4 foot ">
+                    <div class="ftitle ">Connect with us</div>
+                    <p>
+                        Head Office<br> Cedi Plaza<br> 264 Tafawa Balewa Road,Phase 1<br> 901002, Abuja
+                    </p>
+                    <p>Cerom@donation.com</p>
+                    <p>(+234) 8146938887</p>
+                </div>
+
+
+
+
+                <div class="newslettercontainer container col-g-3 col-md-4 col-sm-4 foot ">
+                    <p>Subscribe to receive our weekly newsletters</p>
+                    <input type="text " placeholder="Enter your email Id ">
+                </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <div class="linkicons ">
+                <h4 class="link ">Follow us</h4>
+                <i class="fa-brands fa-facebook-f "></i>
+                <i class="fa-brands fa-twitter "></i>
+                <i class="fa-brands fa-instagram "></i>
+                <a href="claireerhuanga@gmail.com "><i class="fa-solid fa-envelope "></i></a>
+            </div>
+
+            <div class="class ">
+                <p>ALL RIGHTS RESERVED @CEROM 2022</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js "></script>
+    <script>
+        window.jQuery || document.write('<script src="assets/js/jquery-1.11.1.min.js "><\/script>')
+    </script>
+
+    <!-- Bootsrap javascript file -->
+    <script src="assets/js/bootstrap.min.js "></script>
+
+
+    <!-- Template main javascript -->
+    <script src="assets/js/main.js "></script>
 </body>
+
 </html>
