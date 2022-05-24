@@ -630,7 +630,8 @@
     }
     
     .linkicons {
-        float: right;
+        float: left;
+	padding: 10px;
     }
     
     .class {
@@ -699,7 +700,7 @@
             align-items: center;
         }
         .ftitle {
-            margin-left: 40%;
+            margin-left: 30%;
         }
     }
     /* <!--====================================================================================-->
